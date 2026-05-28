@@ -1,0 +1,20 @@
+{
+	"name": "studio-agent",
+	"version": "0.2.0",
+	"private": true,
+	"description": "Build pipeline for the Studio Agent chat block. The plugin itself is plain PHP — this only exists to bundle the React-driven chat surface that talks to the studio-agent agenttic JSON-RPC bridge.",
+	"scripts": {
+		"build": "wp-scripts build blocks/chat/src/view.js --output-path=blocks/chat/build",
+		"start": "wp-scripts start blocks/chat/src/view.js --output-path=blocks/chat/build"
+	},
+	"dependencies": {
+		"@automattic/agenttic-client": "^0.1.63",
+		"@automattic/agenttic-ui": "^0.1.63",
+		"@wp-playground/client": "^3.1.29",
+		"react": "^18.3.0",
+		"react-dom": "^18.3.0"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.0.0"
+	}
+}
