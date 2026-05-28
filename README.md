@@ -4,6 +4,8 @@ A WordPress plugin that registers a Studio agent on top of [`Automattic/agents-a
 
 It's a PoC of the "WordPress is the host" approach to agentic UX: the chat lives in `wp-admin`, the provider is a registered `wp-ai-client` provider, the tools are real `wp_register_ability()` registrations.
 
+<img width="1199" height="841" alt="Screenshot 2026-05-28 at 12 47 26 PM" src="https://github.com/user-attachments/assets/d2886ceb-0660-494b-b54a-2159c532dc8d" />
+
 ## What's inside
 
 - A custom `wp-ai-client` provider (`studio-wpcom`) that proxies through `https://public-api.wordpress.com/wpcom/v2/ai-api-proxy`, authenticated with the Studio user's wpcom token. No per-site API key required.
